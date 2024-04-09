@@ -23,6 +23,12 @@
       "password": "$2a$10$q0QNrkmEpdSGCOqkBrJnEeadNqlXsIT.HiJl99QoxYE8QzJZuzb2O",
       "name": "Luigi Copetti",
       "id": 5
+    },
+    {
+      "email": "paveldp999@icloud.com",
+      "password": "$2a$10$37dSlO6i4twhHPFPgA/SVu2uMqh.hRkSukkyRrkIja3p1ZPqPKPoO",
+      "name": "Pavlo Pastushenko",
+      "id": 6
     }
   ],
   "favorites": [
@@ -75,6 +81,16 @@
       "userId": 4,
       "movieId": 567189,
       "id": 37
+    },
+    {
+      "userId": 6,
+      "movieId": 567189,
+      "id": 38
+    },
+    {
+      "userId": 6,
+      "movieId": 460465,
+      "id": 39
     }
   ],
   "genres": [

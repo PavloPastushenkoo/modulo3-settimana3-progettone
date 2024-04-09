@@ -1,4 +1,14 @@
-<h1 class="text-center mt-3">Benvenuti su Netflix!!</h1>
-<hr>
-<h3 *ngIf="!user" class="text-center mt-5 mb-3">Per accedere ai contenuti <a [routerLink]="['login']">Logga qui</a>, oppure <a [routerLink]="['register']">Registrati</a></h3>
-<app-film *ngIf="user"></app-film>
+<div class="container text-center mt-5">
+  <h1 class="display-4 fw-bold mb-4">Benvenuti su Netflix!</h1>
+  <hr class="my-4" />
+  <ng-container *ngIf="!user; else loggedIn">
+    <h3 class="fw-normal mt-5 mb-3">Accedi per accedere ai contenuti:</h3>
+    <div class="d-flex justify-content-center">
+      <a [routerLink]="['login']" class="btn btn-primary me-3">Accedi</a>
+      <a [routerLink]="['register']" class="btn btn-secondary">Registrati</a>
+    </div>
+  </ng-container>
+  <ng-template #loggedIn>
+    <app-film></app-film>
+  </ng-template>
+</div>
